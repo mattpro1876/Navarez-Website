@@ -582,11 +582,10 @@ footer > a:hover {
 
 
 .social-links img {
-    width: clamp(25px, 4vw, 35px);
-    height: clamp(25px, 4vw, 35px);
+    width: clamp(20px, 3vw, 30px);
+    height: clamp(20px, 3vw, 30px);
     object-fit: contain;
     display: block;
-    transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .social-links img:hover {
