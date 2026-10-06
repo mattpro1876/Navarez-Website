@@ -246,6 +246,7 @@ section {
     margin-bottom: 40px;
 
     letter-spacing: 2px;
+    text-align: center;
 }
 
 
@@ -438,11 +439,142 @@ section {
     width: 100%;
 
     height: calc(100% - 65px);
+    display: block;
+}
 
-    object-fit: cover;
+.portfolio img {
+    width: 100%;
+    height: calc(100% - 65px);
+
+
 
     display: block;
 }
+
+.portfolio h1 {
+    font-family: 'Orbitron', sans-serif;
+
+    font-size: 1.5rem;
+
+    letter-spacing: 1px;
+
+    margin: 15px 0;
+}
+
+
+/*portfolio*/
+
+.portfolio-position {
+    display: flex;
+    gap: clamp(15px, 4vw, 40px);
+    margin-top: clamp(20px, 4vw, 50px);
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.portfolio {
+    background-color: var(--card-bg);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 12px;
+
+    height: 400px;
+    width: 400px;
+
+    display: flex;
+    position: relative;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition:
+        border-color 0.3s,
+        transform 0.2s;
+
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+
+.portfolio:hover {
+    border-color: var(--accent-orange);
+
+    transform: translateY(-3px);
+}
+/* Only the clicked one */
+
+
+
+/* Image quiz3*/
+.image-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.image-page h1 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.image-page img {
+    max-width: 90%;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+
+
+.image-page button {
+    font-family: 'Orbitron', sans-serif;
+    background-color: var(--accent-orange);
+    color: var(--text-main);
+    padding: 14px 35px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: 
+        transform 0.2s,
+        background-color 0.2s;
+}
+
+.image-page button:hover {
+    background-color: #b45309;
+    transform: translateY(-2px);
+}
+
+.image-page img:hover {
+    
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Responsive */
@@ -467,5 +599,6 @@ section {
     .home-content h1 {
         font-size: 2.5rem;
     }
+
 
 }
